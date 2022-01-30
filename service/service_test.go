@@ -19,11 +19,6 @@ var formatURLTestCases = []struct {
 	{"https://google.com", "https://google.com"},
 }
 
-type mockResponseAndHash struct {
-	ExpectedResponse string
-	ExpectedHash     string
-}
-
 var hashResponseTestCases = []struct {
 	ExpectedResponse string
 	ExpectedHash     string
