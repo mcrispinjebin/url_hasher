@@ -20,7 +20,7 @@ func (h *HTTPClient) GetHTTP(requestURL string) ([]byte, error) {
 
 	if err != nil {
 		fmt.Println("Error occured in fetching response", err.Error())
-		fmt.Println(resp)
+		return nil, err
 	}
 
 	defer resp.Body.Close()
